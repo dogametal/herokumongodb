@@ -10,12 +10,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @SpringBootApplication
 public class MongopostApplication {
 
+	/*
     @RequestMapping("/")
     @ResponseBody
     String home() {
       return "Viviane deu ruim a conexão !";
     }
-    
+	 */  
+	
 	public static void main(String[] args) {
 		SpringApplication.run(MongopostApplication.class, args);
 	}
