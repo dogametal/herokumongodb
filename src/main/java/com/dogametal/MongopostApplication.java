@@ -13,7 +13,7 @@ public class MongopostApplication {
     @RequestMapping("/")
     @ResponseBody
     String home() {
-      return "MongoDB Connection !";
+      return "Viviane deu ruim a conexão !";
     }
     
 	public static void main(String[] args) {
