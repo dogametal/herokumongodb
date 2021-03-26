@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.dogametal.springbootmongodb.domain.Post;
-import com.dogametal.springbootmongodb.domain.User;
-import com.dogametal.springbootmongodb.dto.UserDTO;
-import com.dogametal.springbootmongodb.services.UserService;
+import com.dogametal.domain.Post;
+import com.dogametal.domain.User;
+import com.dogametal.dto.UserDTO;
+import com.dogametal.services.UserService;
 
 @RestController
 @RequestMapping(value = "/users")
