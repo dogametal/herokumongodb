@@ -37,6 +37,7 @@ public class Instantiation implements CommandLineRunner {
 		User douglas = new User(null, "Douglas Silva", "douglas.it.soares@gmail.com");
 		User daniel = new User(null, "Daniel Soares", "daniel.bebe.soares@gmail.com");
 		User viviane = new User(null, "Viviane Sousa", "vivi.mae@gmail.com");
+		User iolanda = new User(null, "Iolanda Soares", "io_soares@hotmail.com");
 		
 		userRepository.saveAll(Arrays.asList(maria, alex, bob, douglas, daniel));
 		
@@ -66,7 +67,7 @@ public class Instantiation implements CommandLineRunner {
 		maria.getPosts().addAll(Arrays.asList(post4));
 		viviane.getPosts().addAll(Arrays.asList(post5));
 		
-		userRepository.saveAll(Arrays.asList(douglas, daniel, maria, viviane));
+		userRepository.saveAll(Arrays.asList(douglas, daniel, maria, viviane, iolanda));
 		
 		
 	}
