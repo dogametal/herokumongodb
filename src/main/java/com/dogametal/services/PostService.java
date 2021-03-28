@@ -1,4 +1,4 @@
-package com.dogametal.services;
+ package com.dogametal.services;
 
 import java.util.Date;
 import java.util.List;
@@ -6,6 +6,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.dogametal.domain.Post;
 import com.dogametal.repository.PostRepository;
@@ -33,6 +34,7 @@ public class PostService {
 		return repo.person(text);
 	}
 	
+	@Transactional
 	public List<Post> fullSearch (String text, Date minDate, Date maxDate){
 		//implements date +1 posts searching inside the date
 		maxDate = new Date(maxDate.getTime()+ 24 * 60 * 60 * 1000);

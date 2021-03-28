@@ -47,7 +47,7 @@ public class Instantiation implements CommandLineRunner {
 		Post post3 = new Post(null,sdf.parse("10/12/2020"), "Oiee Papai  !!!", "Bebê ama Papai ...", new AuthorDTO(daniel));
 		Post post4 = new Post(null,sdf.parse("11/12/2020"), "Lindos e que bom !!!", "Primeiro filho é um presente", new AuthorDTO(maria));
 		Post post5 = new Post(null,sdf.parse("27/01/2021"), "Meu filhinho nasceu rs", "Louvado seja Deus !", new AuthorDTO(viviane));
-		Post post6 = new Post(null,sdf.parse("24/03/2021"), "Migration :) Maven for Java 1.8 :)", "Good Luck", new AuthorDTO(douglas));
+		Post post6 = new Post(null,sdf.parse("24/03/2021"), "Migration FDps do caraio :) Maven for Java 1.8 :)", "Good Luck", new AuthorDTO(douglas));
 		
 		CommentDTO c1 = new CommentDTO("Good News, Doug", sdf.parse("26/11/2020"), new AuthorDTO(maria));
 		CommentDTO c2 = new CommentDTO("Luck my friend, be patient !", sdf.parse("26/11/2020"), new AuthorDTO(bob));
