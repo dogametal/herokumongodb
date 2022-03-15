@@ -69,10 +69,24 @@ public class Instantiation implements CommandLineRunner {
 		viviane.getPosts().addAll(Arrays.asList(post5));
 		
 		userRepository.saveAll(Arrays.asList(douglas, daniel, maria, viviane, iolanda));
-		*/
 		
-	}
+
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
 	
+		
+		User newuser = new User(null, "Rodrigues", "rodrigues@hotmail.com");		
+		userRepository.saveAll(Arrays.asList(newuser));
+		
+		Post newpost = new Post(null,sdf.parse("29/04/2021"), "Manhã gelada em Cotia :( Bora trabalhar ", "Um ótimo dia", new AuthorDTO(newuser));
+		postRepository.saveAll(Arrays.asList(newpost));
+		
+		newuser.getPosts().addAll(Arrays.asList(newpost));		
+		userRepository.saveAll(Arrays.asList(newuser));		
+
+*/
+	}
+
 	
 
 }

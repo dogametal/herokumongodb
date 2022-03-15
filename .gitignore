@@ -4,6 +4,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### Exception ###
+/src/main/java/com/dogametal/config/
+
 ### STS ###
 .apt_generated
 .classpath
